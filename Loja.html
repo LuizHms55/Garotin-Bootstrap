@@ -27,8 +27,8 @@
                 <!--icones das redes sociais-->
                     <div class="d-flex align-itens-center">
                         <a href="https://www.instagram.com/osgarotin/"class="social-icon"><img src="img/Icone_Instagram.png" alt="Icone_Instagram"></a>
-                        <a href="https://www.tiktok.com/@osgarotindesg" class="social-icon"><img src="img/Icone_Instagram.png" alt="Icone_Instagram"></a>
-                        <a href="https://x.com/OsGarotin" class="social-icon"><img src="img/Icone_Instagram.png" alt="Icone_Instagram"></a>
+                        <a href="https://www.tiktok.com/@osgarotindesg" class="social-icon"><img src="img/Icone_tiktok.png" alt="Icone_tiktok "></a>
+                        <a href="https://x.com/OsGarotin" class="social-icon"><img src="img/Icone_X.png" alt="Icone_X"></a>
                     </div>
                 </div>
             </div>
@@ -36,9 +36,30 @@
     </header>
    </div> 
 
-    <section class="bannerloja text-center text-white py-5">
-        <h1 class="display-5 fw-bold">Produtos & albuns</h1>
-      </section>
+  <!-- Banner Promocional - 100% de largura -->
+<section class="infanto py-5">
+  <div class="container-fluid px-5">
+    <div class="row align-items-center">
+      
+      <!-- Texto -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h2><strong>Confira!</strong></h2>
+        <h3 class="fw-normal">
+          Fora da bolha<br>
+          já está disponível para compra.
+        </h3>
+        <a href="#" class="btn btn-custom mt-5">Compre já</a>
+      </div>
+
+      <!-- Imagem -->
+      <div class="col-md-6 text-center">
+        <img src="img/livroInfanto.jpg" alt="Fora da Bolha" class="img-fluid" style="max-height: 350px;">
+      </div>
+      
+    </div>
+  </div>
+</section>
+
 
     <section class="py-5 text-center text-white" style="background-color: #1c1c1c;">
         <h2 class="mb-4">Albuns</h2>
@@ -47,7 +68,7 @@
             <!-- Álbum 1 -->
             <div class="col-6 col-md-4 col-lg-3">
               <div class="card bg-dark text-white">
-                <img src="/img/alb2.jpg" class="card-img-top mx-auto d-block mt-3" alt="Álbum 1" />
+                <img src="img/alb2.jpg" class="card-img-top mx-auto d-block mt-3 rounded" alt="Álbum 1" />
                 <div class="card-body">
                   <div class="d-flex justify-content-center mb-2">
                     <button class="btn btn-outline-light btn-sm">&lt;</button>
@@ -61,7 +82,7 @@
             <!--Álbun 2 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="card bg-dark text-white">
-                  <img src="/img/albuum.png" class="card-img-top mx-auto d-block mt-3" alt="Álbum 1" />
+                  <img src="img/albuum.png" class="card-img-top mx-auto d-block mt-3" alt="Álbum 1" />
                   <div class="card-body">
                     <div class="d-flex justify-content-center mb-2">
                       <button class="btn btn-outline-light btn-sm">&lt;</button>
@@ -76,7 +97,7 @@
               <!--Álbun 3 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="card bg-dark text-white">
-                  <img src="/img/album.png" class="card-img-top mx-auto d-block mt-3" alt="Álbum 1" />
+                  <img src="img/album.png" class="card-img-top mx-auto d-block mt-3" alt="Álbum 1" />
                   <div class="card-body">
                     <div class="d-flex justify-content-center mb-2">
                       <button class="btn btn-outline-light btn-sm">&lt;</button>
@@ -93,14 +114,40 @@
         </div>
     </section>
 
+    
+
     <section class="py-5 bg-white text-center">
         <h2 class="text-danger mb-4">Produtos</h2>
+    <!-- Destaque: Mais vendidos -->
+    <div class="container mb-5">
+      <h4 class="text-start mb-5">Mais vendidos</h4>
+      <div class="card p-4 shadow rounded-4 bg-light">
+        <div class="row g-0 align-items-center">
+          <!-- Imagem do livro -->
+          <div class="col-md-3 text-center">
+            <img src="img/livroInfanto.jpg" class="img-fluid rounded-3" style="max-height: 200px;" alt="Capa do livro">
+          </div>
+          <!-- Texto e botão -->
+          <div class="col-md-9">
+            <div class="card-body text-start">
+              <h5 class="card-title fw-bold">Fora da Bolha – capa dura</h5>
+              <p class="card-text">
+                Isaque é um garoto que tem dificuldade para se enturmar, mas tudo muda quando sua mãe lhe dá um ingresso para o show da sua banda favorita, Os Garotin. Naquele dia, o mundo dele se transforma completamente, como se, finalmente, estivesse saindo da sua bolha.
+              </p>
+              <button class="btn btn-danger mt-2" style="width:100px; height: 50px; "     >Adicionar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
         <div class="container">
           <div class="row g-4">
             <!-- Produto 1 -->
             <div class="col-6 col-md-4 col-lg-3">
               <div class="card">
-                <img src="/img/CaoCartas.jpg" alt="" class="mx-auto d-block mt-4">
+                <img src="img/CaoCartas.jpg" alt="" class="mx-auto d-block mt-4 rounded-5 ">
                 <div class="card-body">
                   <div class="d-flex justify-content-center mb-2">
                     <button class="btn btn-outline-dark btn-sm">&lt;</button>
@@ -114,7 +161,7 @@
             <!-- Produto 1 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="card">
-                  <img src="img/calendáriomodelo.png" alt="" class="mx-auto d-block mt-4">
+                  <img src="img/calendáriomodelo.png" alt="" class="mx-auto d-block mt-4  rounded-5">
                   <div class="card-body">
                     <div class="d-flex justify-content-center mb-2">
                       <button class="btn btn-outline-dark btn-sm">&lt;</button>
@@ -128,7 +175,7 @@
               <!-- Produto 1 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="card">
-                  <img src="img/CopoMok.jpg" alt="CopoMok" class="mx-auto d-block mt-4">
+                  <img src="img/CopoMok.jpg" alt="CopoMok" class="mx-auto d-block mt-4 rounded-5">
                   <div class="card-body">
                     <div class="d-flex justify-content-center mb-2">
                       <button class="btn btn-outline-dark btn-sm">&lt;</button>
@@ -142,7 +189,7 @@
               <!-- Produto 1 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="card">
-                  <img src="img/OculosMock.jpg" alt="" class="mx-auto d-block mt-4">
+                  <img src="img/Figurinha.jpg" alt="" class="mx-auto d-block mt-4 rounded-5   ">
                   <div class="card-body">
                     <div class="d-flex justify-content-center mb-2">
                       <button class="btn btn-outline-dark btn-sm">&lt;</button>
@@ -153,10 +200,11 @@
                   </div>
                 </div>
               </div>
+
               <!-- Produto 1 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="card">
-                  <div class="bg-secondary" style="height: 150px;"></div> <!-- Simula imagem -->
+                  <img src="img/PacotesAvulso.jpg" alt="" class="mx-auto d-block mt-4 rounded-5   ">
                   <div class="card-body">
                     <div class="d-flex justify-content-center mb-2">
                       <button class="btn btn-outline-dark btn-sm">&lt;</button>
@@ -167,13 +215,59 @@
                   </div>
                 </div>
               </div>
+
+              <!-- Produto 1 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card">
+                  <img src="img/FrotaBrinc.jpg" alt="" class="mx-auto d-block mt-4 rounded-5   ">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-center mb-2">
+                      <button class="btn btn-outline-dark btn-sm">&lt;</button>
+                      <span class="mx-2">1</span>
+                      <button class="btn btn-outline-dark btn-sm">&gt;</button>
+                    </div>
+                    <button class="btn btn-danger w-100 btn-sm">Adicionar</button>
+                  </div>
+                </div>
+              </div>
+
+
+              
       
             <!-- Repita col para os demais produtos -->
           </div>
         </div>
 
+        <footer class="bg-black text-white py-4 mt-5">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <!-- Coluna: Email -->
+      <div class="col-12 col-md-4 mb-3">
+        <h5>Contato</h5>
+        <p>Email: <a href="mailto:show@bonustrack.art.br" class="text-white text-decoration-underline">show@bonustrack.art.br</a></p>
+      </div>
+      <!-- Coluna: Instagram -->
+      <div class="col-12 col-md-4 mb-3">
+        <h5>Instagram</h5>
+        <p>
+          <a href="https://instagram.com/anchietx" target="_blank" class="text-white me-2">@anchietx</a><br>
+          <a href="https://instagram.com/leoguima__" target="_blank" class="text-white me-2">@leoguima__</a><br>
+          <a href="https://instagram.com/ocupertino" target="_blank" class="text-white">@ocupertino</a>
+        </p>
+      </div>
+      <!-- Coluna: Linktree -->
+      <div class="col-12 col-md-4 mb-3">
+        <h5>Mais links</h5>
+        <p><a href="https://tr.ee/SvwmWIZaY" target="_blank" class="text-white text-decoration-underline">Linktree do projeto</a></p>
+      </div>
+    </div>
+    <hr class="border-light">
+    <div class="text-center small">
+      &copy; 2025 Bonus Track. Todos os direitos reservados.
+    </div>
+  </div>
+</footer>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
         <script src="script.js"></script>
       </section>
-      
-      
