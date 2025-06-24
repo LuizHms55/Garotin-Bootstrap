@@ -1,276 +1,281 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <title>Os Garotin</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Os Garotin</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-    <main>
-  <div class="container-fluid fundoMenu">
-    <header class="container">
+  <main>
+    <div class="container-fluid fundoMenu">
+      <header class="container">
         <nav class="navbar navbar-expand-lg navbar-custom">
-            <div class="container-fluid">
-                <img class="NavLogo" src="img/NavLogo.png" alt="">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collpase" data-bs-target="#navbarContent">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!--navBar-->
-                <div class="navbar-nav flex-row me-auto mb-2 mb-lg-0 gap-3 MenuCentral"  id="navbarContent">
-                    <div class="nav-item"><a class="nav-link" href="index.html">Home</a></div>
-                    <div class="nav-item"><a class="nav-link" href="#agenda">Agenda</a></div>
-                    <div class="nav-item"><a class="nav-link" href="Campanha.html">Campanha</a></div>
-                    <div class="nav-item"><a class="nav-link" href="Loja.html">Loja</a></div>
-                </div>
-                <!--icones das redes sociais-->
-                    <div class="d-flex align-itens-center">
-                        <a href="https://www.instagram.com/osgarotin/"class="social-icon"><img src="img/Icone_Instagram.png" alt="Icone_Instagram"></a>
-                        <a href="https://www.tiktok.com/@osgarotindesg" class="social-icon"><img src="img/Icone_tiktok.png" alt="Icone_tiktok "></a>
-                        <a href="https://x.com/OsGarotin" class="social-icon"><img src="img/Icone_X.png" alt="Icone_X"></a>
-                    </div>
-                </div>
+          <div class="container-fluid">
+            <img class="NavLogo" src="img/NavLogo.png" alt="Logo Os Garotin" style="max-height: 60px;" />
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarContent"
+              aria-controls="navbarContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3 MenuCentral">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#agenda">Agenda</a></li>
+                <li class="nav-item"><a class="nav-link" href="Campanha.html">Campanha</a></li>
+                <li class="nav-item"><a class="nav-link" href="Loja.html">Loja</a></li>
+              </ul>
+              <div class="d-flex align-items-center">
+                <a href="https://www.instagram.com/osgarotin/" class="social-icon me-2"><img src="img/Icone_Instagram.png" alt="Instagram" style="height: 30px;" /></a>
+                <a href="https://www.tiktok.com/@osgarotindesg" class="social-icon me-2"><img src="img/Icone_tiktok.png" alt="TikTok" style="height: 30px;" /></a>
+                <a href="https://x.com/OsGarotin" class="social-icon"><img src="img/Icone_X.png" alt="Twitter" style="height: 30px;" /></a>
+              </div>
             </div>
+          </div>
         </nav>
-    </header>
-   </div> 
+      </header>
+    </div>
 
-  <!-- Banner Promocional - 100% de largura -->
-<section class="mb-2">
-  <img src="  img/bannersite.jpg" alt="" style="width: 1380px ; height: 400px;"       >
+    <!-- Banner Promocional responsivo -->
+    <section class="mb-2">
+      <img src="img/bannersite.jpg" alt="Banner Promocional" class="banner-img" />
+    </section>
+
+    <section class="py-5 text-center text-white" style="background-color: #1c1c1c;">
+  <h2 class="mb-4" style="font-size: 50px;"   >Albuns</h2>
+  <div class="container mt-5">
+    <div class="row g-5 justify-content-center">
+      <!-- Card 1 -->
+      <div class="col-8 col-md-6 col-lg-4">
+        <div class="card h-100 text-white bg-dark">
+          <img src="img/alb2.png" class="card-img-top img-produto img-fluid" alt="Produto 1"        >
+          <div class="card-body text-center">
+            <p class="mb-3 fw-bold text-white">R$ 29,90</p>
+            <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+              <button class="btn btn-outline-light btn-sm rounded-circle px-3">&lt;</button>
+              <span>1</span>
+              <button class="btn btn-outline-light btn-sm rounded-circle px-3">&gt;</button>
+            </div>
+            <button class="btn btn-danger w-100 btn-sm rounded-pill">Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-8 col-md-6 col-lg-4">
+        <div class="card h-100 text-white bg-dark">
+          <img src="img/albuum.png" class="card-img-top img-produto" alt="Produto 2">
+          <div class="card-body text-center">
+            <p class="mb-3 fw-bold text-white">R$ 29,90</p>
+            <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+              <button class="btn btn-outline-light btn-sm rounded-circle px-3">&lt;</button>
+              <span>1</span>
+              <button class="btn btn-outline-light btn-sm rounded-circle px-3">&gt;</button>
+            </div>
+            <button class="btn btn-danger w-100 btn-sm rounded-pill">Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-8 col-md-6 col-lg-4">
+        <div class="card h-100 text-white bg-dark">
+          <img src="img/album.png" class="card-img-top img-produto" alt="Produto 3">
+          <div class="card-body text-center">
+            <p class="mb-3 fw-bold text-white">R$ 29,90</p>
+            <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+              <button class="btn btn-outline-light btn-sm rounded-circle px-3">&lt;</button>
+              <span>1</span>
+              <button class="btn btn-outline-light btn-sm rounded-circle px-3">&gt;</button>
+            </div>
+            <button class="btn btn-danger w-100 btn-sm rounded-pill">Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Adicione mais cards aqui, sempre dentro de uma <div class="col-6 col-md-4 col-lg-3"> -->
+    </div>
+  </div>
+</section>
+
+      <!-- Destaque: Mais vendidos -->
+      <section class="py-5 bg-white text-center">
+  <h2 class="text-danger mb-4 reveal" style="font-size: 50px;">Produtos</h2>
+      <div class="container reveal mt-5">
+        <div class="row g-5">
+
+          <!-- Banner Promocional - 100% de largura -->
+<section class="py-5 shadow container infanto rounded-5 mt-5  ">
+  <div class="container-fluid px-5">
+    <div class="row align-items-center container-fluid ">
+      
+      <!-- Texto -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h1 class="text-white"><strong>Confira!</strong></h2>
+        <h3 class="fw-normal text-white">
+          Fora da bolha<br>
+          já está disponível para compra.
+        </h5>
+        <a href="#" class="btn btn-custom mt-3">Compre já</a>
+      </div>
+
+      <!-- Imagem -->
+      <div class="col-md-6 text-center">
+        <img src="img/livroInfanto.png" alt="Fora da Bolha" class="img-fluid" style="max-height: 300px;">
+      </div>
+      
+    </div>
+  </div>
 </section>
 
 
-    <section class="py-5 text-center text-white" style="background-color: #1c1c1c;">
-        <h2 class="mb-4">Albuns</h2>
-        <div class="container">
-          <div class="row justify-content-center g-4">
-            <!-- Álbum 1 -->
-            <div class="col-6 col-md-4 col-lg-3">
-              <div class="card bg-dark text-white">
-                <img src="img/alb2.jpg" class="card-img-top mx-auto d-block mt-3 rounded" alt="Álbum 1" />
-                <div class="card-body">
-                  <div class="d-flex justify-content-center mb-2">
-                    <button class="btn btn-outline-light btn-sm rounded-5">&lt;</button>
-                    <span class="mx-2">1</span>
-                    <button class="btn btn-outline-light btn-sm rounded-5">&gt;</button>
-                  </div>
-                  <button class="btn btn-danger w-100 btn-sm rounded-5">Adicionar</button>
-                </div>
-              </div>
-            </div>
-            <!--Álbun 2 -->
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="card bg-dark text-white">
-                  <img src="img/albuum.png" class="card-img-top mx-auto d-block mt-3" alt="Álbum 1" />
-                  <div class="card-body">
-                    <div class="d-flex justify-content-center mb-2">
-                      <button class="btn btn-outline-light btn-sm rounded-5">&lt;</button>
-                      <span class="mx-2">1</span>
-                      <button class="btn btn-outline-light btn-sm rounded-5">&gt;</button>
-                    </div>
-                    <button class="btn btn-danger w-100 btn-sm rounded-5">Adicionar</button>
-                  </div>
-                </div>
-              </div>
-              
-              <!--Álbun 3 -->
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="card bg-dark text-white">
-                  <img src="img/album.png" class="card-img-top mx-auto d-block mt-3" alt="Álbum 1" />
-                  <div class="card-body">
-                    <div class="d-flex justify-content-center mb-2">
-                      <button class="btn btn-outline-light btn-sm rounded-5">&lt;</button>
-                      <span class="mx-2">1</span>
-                      <button class="btn btn-outline-light btn-sm rounded-5">&gt;</button>
-                    </div>
-                    <button class="btn btn-danger w-100 btn-sm rounded-5">Adicionar</button>
-                  </div>
-                </div>
-              </div>
       
-            <!-- Repita col para outros álbuns -->
-          </div>
-        </div>
-    </section>
-
-    
-
-    <section class="py-5 bg-white text-center">
-        <h2 class="text-danger mb-4 reveal">Produtos</h2>
-    <!-- Destaque: Mais vendidos -->
-    <div class="container mb-5">
-      <h4 class="text-start my-5 reveal">Mais vendidos</h4>
-      <div class="card p-4 shadow rounded-4 infanto reveal mb-5">
-        <div class="row g-0 align-items-center">
-          <!-- Imagem do livro -->
-          <div class="col-md-3 text-center">
-            <img src="img/livroInfanto.png" class="img-fluid rounded-3" style="max-height: 200px;" alt="Capa do livro"> 
-          </div>
-          <!-- Texto e botão -->
-          <div class="col-md-9">
-            <div class="card-body text-start">
-              <h5 class="card-title fw-bold text-white">Fora da Bolha – capa dura</h5>
-              <p class="card-text text-white" style="font-size: 20px; font-weight: bold;"          >
-                Isaque é um garoto que tem dificuldade para se enturmar, mas tudo muda quando sua mãe lhe dá um ingresso para o show da sua banda favorita, Os Garotin. Naquele dia, o mundo dele se transforma completamente, como se, finalmente, estivesse saindo da sua bolha.
-              </p>
-              <button class="btn btn-danger mt-2 rounded-5" style="width:100px; height: 50px; ">Adicionar</button>
+ <div class="col-8 col-md-6 col-lg-4">
+        <div class="card h-100 text-white bg-dark">
+          <img src="img/CaoCartas.jpg" class="card-img-top img-produto" alt="Produto 2" style="height: 320px;">
+          <div class="card-body text-center">
+            <p class="mb-3 fw-bold text-white">R$ 29,90</p>
+            <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+              <button class="btn btn-outline-light btn-sm rounded-circle px-3">&lt;</button>
+              <span>1</span>
+              <button class="btn btn-outline-light btn-sm rounded-circle px-3">&gt;</button>
             </div>
+            <button class="btn btn-danger w-100 btn-sm rounded-pill">Adicionar</button>
           </div>
         </div>
       </div>
-    </div>
-
-
-        <div class="container reveal mt-5">
-          <div class="row g-4">
-            <!-- Produto 1 -->
-            <div class="col-6 col-md-4 col-lg-3">
-              <div class="card">
-                <img src="img/CaoCartas.jpg" alt="" class="mx-auto d-block mt-4 rounded-5 ">
-                <div class="card-body">
-                  <div class="d-flex justify-content-center mb-2">
-                    <button class="btn btn-outline-dark btn-sm">&lt;</button>
-                    <span class="mx-2">1</span>
-                    <button class="btn btn-outline-dark btn-sm">&gt;</button>
-                  </div>
-                  <button class="btn btn-danger w-100 btn-sm">Adicionar</button>
-                </div>
-              </div>
+      <div class="col-8 col-md-6 col-lg-4">
+        <div class="card h-100 text-white bg-dark">
+          <img src="img/OculosLoja.jpeg" class="card-img-top img-produto" alt="Produto 2" style="height: 320px;">
+          <div class="card-body text-center">
+            <p class="mb-3 fw-bold text-white">R$ 29,90</p>
+            <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+              <button class="btn btn-outline-light btn-sm rounded-circle px-3">&lt;</button>
+              <span>1</span>
+              <button class="btn btn-outline-light btn-sm rounded-circle px-3">&gt;</button>
             </div>
-            <!-- Produto 1 -->
-            <div class="col-6 col-md-4 reveal col-lg-3">
-                <div class="card">
-                  <img src="img/calendáriomodelo.png" alt="" class="mx-auto d-block mt-4  rounded-5">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-center mb-2">
-                      <button class="btn btn-outline-dark btn-sm">&lt;</button>
-                      <span class="mx-2">1</span>
-                      <button class="btn btn-outline-dark btn-sm">&gt;</button>
-                    </div>
-                    <button class="btn btn-danger w-100 btn-sm">Adicionar</button>
-                  </div>
-                </div>
-              </div>
-              <!-- Produto 1 -->
-            <div class="col-6 col-md-4 reveal col-lg-3">
-                <div class="card">
-                  <img src="img/OculosLoja.jpeg" alt="CopoMok" class="mx-auto d-block mt-4 rounded-5">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-center mb-2">
-                      <button class="btn btn-outline-dark btn-sm">&lt;</button>
-                      <span class="mx-2">1</span>
-                      <button class="btn btn-outline-dark btn-sm">&gt;</button>
-                    </div>
-                    <button class="btn btn-danger w-100 btn-sm">Adicionar</button>
-                  </div>
-                </div>
-              </div>
-              <!-- Produto 1 -->
-            <div class="col-6 col-md-4 reveal col-lg-3">
-                <div class="card">
-                  <img src="img/Figurinha.jpg" alt="" class="mx-auto d-block mt-4 rounded-5   ">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-center mb-2">
-                      <button class="btn btn-outline-dark btn-sm">&lt;</button>
-                      <span class="mx-2">1</span>
-                      <button class="btn btn-outline-dark btn-sm">&gt;</button>
-                    </div>
-                    <button class="btn btn-danger w-100 btn-sm">Adicionar</button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Produto 1 -->
-            <div class="col-6 col-md-4 reveal col-lg-3">
-                <div class="card">
-                  <img src="img/FigurinhasLoja.jpeg" alt="" class="mx-auto d-block mt-4 rounded-5   ">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-center mb-2">
-                      <button class="btn btn-outline-dark btn-sm">&lt;</button>
-                      <span class="mx-2">1</span>
-                      <button class="btn btn-outline-dark btn-sm">&gt;</button>
-                    </div>
-                    <button class="btn btn-danger w-100 btn-sm">Adicionar</button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Produto 1 -->
-            <div class="col-6 col-md-4 reveal col-lg-3">
-                <div class="card">
-                  <img src="img/FrotaBrinc.jpg" alt="" class="mx-auto d-block mt-4 rounded-5   ">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-center mb-2">
-                      <button class="btn btn-outline-dark btn-sm">&lt;</button>
-                      <span class="mx-2">1</span>
-                      <button class="btn btn-outline-dark btn-sm">&gt;</button>
-                    </div>
-                    <button class="btn btn-danger w-100 btn-sm">Adicionar</button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Produto 1 -->
-            <div class="col-6 col-md-4 reveal col-lg-3">
-                <div class="card">
-                  <img src="img/CopoLoja.jpeg" alt="" class="mx-auto d-block mt-4 rounded-5   ">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-center mb-2">
-                      <button class="btn btn-outline-dark btn-sm">&lt;</button>
-                      <span class="mx-2">1</span>
-                      <button class="btn btn-outline-dark btn-sm">&gt;</button>
-                    </div>
-                    <button class="btn btn-danger w-100 btn-sm">Adicionar</button>
-                  </div>
-                </div>
-              </div>
-
-
-
-
-              
-      
-            <!-- Repita col para os demais produtos -->
+            <button class="btn btn-danger w-100 btn-sm rounded-pill">Adicionar</button>
           </div>
         </div>
-</main>
-        <footer class="bg-black text-white py-4 mt-5">
-  <div class="container">
-    <div class="row text-center text-md-start">
-      <!-- Coluna: Email -->
-      <div class="col-12 col-md-4 mb-3">
-        <h5>Contato</h5>
-        <p>Email: <a href="mailto:show@bonustrack.art.br" class="text-white text-decoration-underline">show@bonustrack.art.br</a></p>
       </div>
-      <!-- Coluna: Instagram -->
-      <div class="col-12 col-md-4 mb-3">
-        <h5>Instagram</h5>
-        <p>
-          <a href="https://instagram.com/anchietx" target="_blank" class="text-white me-2">@anchietx</a><br>
-          <a href="https://instagram.com/leoguima__" target="_blank" class="text-white me-2">@leoguima__</a><br>
-          <a href="https://instagram.com/ocupertino" target="_blank" class="text-white">@ocupertino</a>
-        </p>
+      <div class="col-8 col-md-6 col-lg-4">
+        <div class="card h-100 text-white bg-dark">
+          <img src="img/FigurinhasLoja.jpeg" class="card-img-top img-produto" alt="Produto 2" style="height: 320px;"      >
+          <div class="card-body text-center">
+            <p class="mb-3 fw-bold text-white">R$ 29,90</p>
+            <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+              <button class="btn btn-outline-light btn-sm rounded-circle px-3">&lt;</button>
+              <span>1</span>
+              <button class="btn btn-outline-light btn-sm rounded-circle px-3">&gt;</button>
+            </div>
+            <button class="btn btn-danger w-100 btn-sm rounded-pill">Adicionar</button>
+          </div>
+        </div>
       </div>
-      <!-- Coluna: Linktree -->
-      <div class="col-12 col-md-4 mb-3">
-        <h5>Mais links</h5>
-        <p><a href="https://tr.ee/SvwmWIZaY" target="_blank" class="text-white text-decoration-underline">Linktree do projeto</a></p>
+      <div class="col-8 col-md-6 col-lg-4">
+        <div class="card h-100 text-white bg-dark">
+          <img src="img/Figurinha.jpg" class="card-img-top img-produto" alt="Produto 2" style="height: 320px;"    >
+          <div class="card-body text-center">
+            <p class="mb-3 fw-bold text-white">R$ 29,90</p>
+            <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+              <button class="btn btn-outline-light btn-sm rounded-circle px-3">&lt;</button>
+              <span>1</span>
+              <button class="btn btn-outline-light btn-sm rounded-circle px-3">&gt;</button>
+            </div>
+            <button class="btn btn-danger w-100 btn-sm rounded-pill">Adicionar</button>
+          </div>
+        </div>
       </div>
-    </div>
-    <hr class="border-light">
-    <div class="text-center small">
-      &copy; 2025 Bonus Track. Todos os direitos reservados.
+      <div class="col-8 col-md-6 col-lg-4">
+        <div class="card h-100 text-white bg-dark">
+          <img src="img/Foradabolha.jpeg" class="card-img-top img-produto" alt="Produto 2"  style="height: 320px;">
+          <div class="card-body text-center">
+            <p class="mb-3 fw-bold text-white">R$ 29,90</p>
+            <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+              <button class="btn btn-outline-light btn-sm rounded-circle px-3">&lt;</button>
+              <span>1</span>
+              <button class="btn btn-outline-light btn-sm rounded-circle px-3">&gt;</button>
+            </div>
+            <button class="btn btn-danger w-100 btn-sm rounded-pill">Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-8 col-md-6 col-lg-4">
+        <div class="card h-100 text-white bg-dark">
+          <img src="img/CopoLoja.jpeg" class="card-img-top img-produto" alt="Produto 2"  style="height: 320px;">
+          <div class="card-body text-center">
+            <p class="mb-3 fw-bold text-white">R$ 29,90</p>
+            <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+              <button class="btn btn-outline-light btn-sm rounded-circle px-3">&lt;</button>
+              <span>1</span>
+              <button class="btn btn-outline-light btn-sm rounded-circle px-3">&gt;</button>
+            </div>
+            <button class="btn btn-danger w-100 btn-sm rounded-pill">Adicionar</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-8 col-md-6 col-lg-4">
+        <div class="card h-100 text-white bg-dark">
+          <img src="img/calendáriomodelo.jpg" class="card-img-top img-produto" alt="Produto 2"  style="height: 320px;">
+          <div class="card-body text-center">
+            <p class="mb-3 fw-bold text-white">R$ 29,90</p>
+            <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+              <button class="btn btn-outline-light btn-sm rounded-circle px-3">&lt;</button>
+              <span>1</span>
+              <button class="btn btn-outline-light btn-sm rounded-circle px-3">&gt;</button>
+            </div>
+            <button class="btn btn-danger w-100 btn-sm rounded-pill">Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Adicione mais cards aqui se quiser -->
+
     </div>
   </div>
-</footer>
-      </section>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
-   </body>
+</section>
+
+
+
+  <footer class="bg-black text-white py-4 mt-5">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-12 col-md-4 mb-3">
+          <h5>Contato</h5>
+          <p>
+            Email: <a href="mailto:show@bonustrack.art.br" class="text-white text-decoration-underline">show@bonustrack.art.br</a>
+          </p>
+        </div>
+        <div class="col-12 col-md-4 mb-3">
+          <h5>Instagram</h5>
+          <p>
+            <a href="https://instagram.com/anchietx" target="_blank" class="text-white me-2">@anchietx</a><br />
+            <a href="https://instagram.com/leoguima__" target="_blank" class="text-white me-2">@leoguima__</a><br />
+            <a href="https://instagram.com/ocupertino" target="_blank" class="text-white">@ocupertino</a>
+          </p>
+        </div>
+        <div class="col-12 col-md-4 mb-3">
+          <h5>Mais links</h5>
+          <p><a href="https://tr.ee/SvwmWIZaY" target="_blank" class="text-white text-decoration-underline">Linktree do projeto</a></p>
+        </div>
+      </div>
+      <hr class="border-light" />
+      <div class="text-center small">&copy; 2025 Bonus Track. Todos os direitos reservados.</div>
+    </div>
+  </footer>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+
 </html>

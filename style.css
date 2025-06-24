@@ -1,3 +1,4 @@
+/* RESET E ESTRUTURA BÁSICA */
 html, body {
   margin: 0;
   padding: 0;
@@ -8,221 +9,308 @@ body {
   display: flex;
   flex-direction: column;
 }
-.fundoPreto{
+.fundoPreto {
   background-color: #000000;
 }
-.navbar-custom {
-    background-color: #992b2b;
-  }
-.social-icon {
-    color: #992b2b !important;
-    border-radius: 8px;
-    padding: 5px 8px;
-    margin-left: 8px;
-    font-size: 1.2rem;
-  }
-.fundoMenu{
+
+/* NAVBAR */
+.navbar-custom, .fundoMenu {
   background-color: #992b2b;
 }
-.MenuCentral{
-  margin: auto;
-}
-.navbar{
+.navbar {
   font-size: 22px;
 }
-.navbar img{
+.navbar img {
   width: 150px;
 }
-.social-icon img{
-    width: 30px;
-  }
+.social-icon {
+  color: #992b2b !important;
+  border-radius: 8px;
+  padding: 5px 8px;
+  margin-left: 8px;
+}
+.social-icon img {
+  width: 30px;
+}
 .social-icon:hover {
-    background-color: #e6e6e6;
-  }
+  background-color: #e6e6e6;
+}
 .navbar-nav .nav-link {
-    color: white;
-    margin-left: 20px;
-  }
+  color: white;
+  margin-left: 20px;
+}
 .navbar-nav .nav-link:hover {
-    text-decoration: underline;
-  }
-.membros{
-    color: white; 
-    width: auto;
-    font-size: 25px;
+  text-decoration: underline;
+}
+.MenuCentral {
+  margin: auto;
+}
 
-  }
+/* MEMBROS */
+.membros {
+  color: white;
+  font-size: 25px;
+}
 .section {
-    padding: 60px 20px;
-  }
-.cards{
-    background: linear-gradient(to bottom, #000000 90%, #330000 30%, #7a1a1a 60%);
-  }
-.member-img {
-    border-radius: 20px;
-    object-fit: cover;
-    width: 100%;
-    height: 300px;
-  }
-.member-card {
-    background-color: #1a1a1a;
-    border: none;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  }
+  padding: 60px 20px;
+}
 .section h1, .section h2 {
-    font-weight: bold;
-  }
-.alb1{
-    background-image: url(img/GarotinAlb1.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    width: 100%;
-    height: 500px;
-    display: flex !important;
-    flex-direction: column;
+  font-weight: bold;
+}
 
-    align-items: center !important;
+/* CARDS EXPANSÍVEIS */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 125px;
+  padding: 60px 20px;
 }
-.alb2{
-    background-image: url(img/GarotinAlb3.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    width: 100%;
-    height: 500px;
-    display: flex !important;
-    flex-direction: column;
-    align-items: center !important;
+.card-expandable {
+  width: 200px;
+  height: 280px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: #111;
+  color: white;
+  cursor: pointer;
+  transition: all 0.6s ease;
 }
-.alb3{
-    background-image: url(img/GarotinAlb2.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    width: 100%;
-    height: 500px;
-    display: flex !important;
-    flex-direction: column;
-    align-items: center !important;
+.card-expandable img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: all 0.6s ease;
 }
-.carousel-item{
-    width: 100%;
-    height: 430px;
+.card-expandable .card-body {
+  position: absolute;
+  inset: 0;
+  padding: 20px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  transition: all 0.4s ease;
 }
-.card button{
-  background-color: #992b2b;
-  width: 40px;
-  height: 40px;
+.card-expandable.expanded {
+  width: 380px;
+  height: 345px;
 }
-.card img{
-  height: 250px;
-  width: 250px;
+.card-expandable.expanded img {
+  display: none;
 }
+.card-expandable.expanded .card-body {
+  position: static;
+  opacity: 1;
+  max-height: 300px;
+  background: none;
+  display: flex;
+}
+.content-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.card-img-left {
+  width: 160px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+.card-title {
+  margin-bottom: 0.5rem;
+}
+.card-text {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* CARROSSEL */
+.carousel-item {
+  width: 100%;
+  max-height: 60vh;
+}
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* AGENDA */
+.agenda .d-flex {
+  gap: 10px;
+}
+
+/* ÁLBUNS */
+.alb1, .alb2, .alb3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+.alb1 {
+  background-image: url(img/GarotinAlb1.png);
+}
+.alb2 {
+  background-image: url(img/GarotinAlb3.png);
+}
+.alb3 {
+  background-image: url(img/GarotinAlb2.png);
+}
+iframe {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+/* BOTÕES */
+.card button,
 .btn-custom {
-  background-color: #8B2C2C;
+  background-color: #992b2b;
   color: #fff;
-  width:  150px;
-  height:50px;
+  width: 100px;
+  height: 40px;
   border: none;
   border-radius: 20px;
-  padding: 6px 20px;
-  font-size: 14px;
-  transition: background-color 0.3s;
 }
 .btn-custom:hover {
   background-color: #6e1f1f;
   color: #fff;
 }
-.infanto{
- background-image: url(img/GrafismoBG.png);
- background-size: 100%;
+.btn-custom {
+  padding: 6px 20px;
+  font-size: 14px;
+  height: 50px;
 }
-    .cards-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 125px;
-      padding: 60px 20px;
-    }
 
-    .card-expandable {
-      width: 200px;
-      height: 280px;
-      position: relative;
-      overflow: hidden;
-      border-radius: 15px;
-      background-color: #111;
-      color: white;
-      cursor: pointer;
-      transition: all 0.6s ease;
-    }
-
-    .card-expandable img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 15px;
-      transition: all 0.6s ease;
-    }
-
-    .card-expandable .card-body {
-      position: absolute;
-      inset: 0;
-      padding: 20px;
-      opacity: 0;
-      max-height: 0;
-      overflow: hidden;
-      background-color: #111;
-      display: flex;
-      flex-direction: column;
-      justify-content: left;
-      transition: all 0.4s ease;
-    }
-
-    .card-expandable.expanded {
-      width: 380px;
-      height: 345px;
-    }
-
-    .card-expandable.expanded img {
-      display: none;/* esconde a imagem de fundo */
-    }
-
-    .card-expandable.expanded .card-body {
-      position: static;
-      opacity: 1;
-      max-height: 300px;
-      background: none;
-      display: flex;
-    }
-
-    .content-container {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .card-img-left {
-      width: 160px;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 12px;
-      flex-shrink: 0;
-    }
-
-    .card-title {
-      margin-bottom: 0.5rem;
-    }
-
-    .card-text {
-      font-size: 1rem;
-      margin-top: 10px;
-    }
-.campan{
+/* CAMPANHA */
+.campan {
   font-size: 17px;
   font-weight: bold;
 }
-.ong{
+.ong {
   font-size: 20px;
 }
 
+/* FOOTER */
+footer h5 {
+  font-size: 1.1rem;
+}
+footer p, footer a {
+  font-size: 0.9rem;
+  word-break: break-word;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .card-expandable,
+  .card-expandable.expanded {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .content-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-img-left {
+    width: 100%;
+    height: auto;
+  }
+
+  .agenda .d-flex {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    text-align: center;
+  }
+
+  .agenda .ps-4,
+  .agenda .pe-4,
+  .agenda .border-end {
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  .navbar-nav {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-link {
+    margin: 10px 0;
+  }
+}
+
+/* AJUSTES PARA O BANNER E IMAGENS RESPONSIVAS */
+.banner-img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.card .preco {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.quantidade-container {
+  font-size: 1rem;
+}
+
+.card .btn-outline-light {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+}
+
+.produto-img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  width: 100%;
+}
+
+.preco {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.quantidade-container {
+  gap: 10px;
+}
+
+.infanto{
+  background-image: url("img/GrafismoBG.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
